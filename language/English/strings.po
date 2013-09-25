@@ -624,6 +624,18 @@ msgctxt "#31905"
 msgid "Forecast"
 msgstr ""
 
+msgctxt "#31906"
+msgid "Visibility"
+msgstr ""
+
+msgctxt "#31907"
+msgid "Pressure"
+msgstr ""
+
+msgctxt "#31908"
+msgid "Wind Gust"
+msgstr ""
+
 #empty strings from id 31906 to 31907
 
 msgctxt "#31908"

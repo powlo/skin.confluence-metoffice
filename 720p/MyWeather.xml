@@ -195,6 +195,7 @@
 				</control>
 				<control type="label">
 					<description>current feels like label</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>170</posx>
 					<posy>400</posy>
 					<width>170</width>
@@ -207,7 +208,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
+					<description>current visibility label</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>170</posx>
+					<posy>400</posy>
+					<width>170</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31906] :</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
 					<description>current dew label</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>170</posx>
 					<posy>430</posy>
 					<width>170</width>
@@ -220,7 +236,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
+					<description>current pressure label</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>170</posx>
+					<posy>430</posy>
+					<width>170</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31907] :</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
 					<description>current humidity label</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>170</posx>
 					<posy>460</posy>
 					<width>170</width>
@@ -233,7 +264,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
+					<description>current wind label</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>170</posx>
+					<posy>460</posy>
+					<width>170</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[404] :</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
 					<description>current UV Index label</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>170</posx>
 					<posy>490</posy>
 					<width>170</width>
@@ -246,7 +292,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>current Wind label</description>
+					<description>current wind gust label</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>170</posx>
+					<posy>490</posy>
+					<width>170</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31908] :</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>current wind label</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>170</posx>
 					<posy>520</posy>
 					<width>170</width>
@@ -260,6 +321,7 @@
 				</control>
 				<control type="label">
 					<description>current feels like Value</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>185</posx>
 					<posy>400</posy>
 					<width>300</width>
@@ -272,7 +334,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
+					<description>current visibility Value</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>185</posx>
+					<posy>400</posy>
+					<width>300</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Window.Property(Current.Visibility)] metres</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
 					<description>current dew Value</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>185</posx>
 					<posy>430</posy>
 					<width>300</width>
@@ -285,7 +362,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
+					<description>current pressure Value</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>185</posx>
+					<posy>430</posy>
+					<width>300</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Window.Property(Current.Pressure)] hpa</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
 					<description>current humidity Value</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>185</posx>
 					<posy>460</posy>
 					<width>300</width>
@@ -298,7 +390,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
+					<description>current wind Value</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>185</posx>
+					<posy>460</posy>
+					<width>300</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<info>Window.Property(Current.Wind)</info>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
 					<description>current UV Index Value</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>185</posx>
 					<posy>490</posy>
 					<width>300</width>
@@ -311,7 +418,22 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
+					<description>current Wind Gust Value</description>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+					<posx>185</posx>
+					<posy>490</posy>
+					<width>300</width>
+					<height>35</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<info>Window.Property(Current.WindGust)</info>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
 					<description>current Wind Value</description>
+					<visible>!StringCompare(Weather.Plugin,weather.metoffice)</visible>
 					<posx>185</posx>
 					<posy>520</posy>
 					<width>300</width>
