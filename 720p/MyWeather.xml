@@ -217,7 +217,7 @@
 					<font>font13</font>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31906] :</label>
+					<label>$LOCALIZE[31800] :</label>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -245,7 +245,7 @@
 					<font>font13</font>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31907] :</label>
+					<label>$LOCALIZE[31801] :</label>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -301,7 +301,7 @@
 					<font>font13</font>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31908] :</label>
+					<label>$LOCALIZE[31802] :</label>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>

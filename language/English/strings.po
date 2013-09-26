@@ -601,6 +601,19 @@ msgctxt "#31511"
 msgid "Channel Options"
 msgstr ""
 
+msgctxt "#31800"
+msgid "Visibility"
+msgstr ""
+
+msgctxt "#31801"
+msgid "Pressure"
+msgstr ""
+
+msgctxt "#31802"
+msgid "Wind Gust"
+msgstr ""
+
+
 #empty strings from id 31512 to 31900
 #Weather plugin
 
@@ -622,18 +635,6 @@ msgstr ""
 
 msgctxt "#31905"
 msgid "Forecast"
-msgstr ""
-
-msgctxt "#31906"
-msgid "Visibility"
-msgstr ""
-
-msgctxt "#31907"
-msgid "Pressure"
-msgstr ""
-
-msgctxt "#31908"
-msgid "Wind Gust"
 msgstr ""
 
 #empty strings from id 31906 to 31907
