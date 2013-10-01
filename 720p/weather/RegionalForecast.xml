@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="WeatherRegionalForcast">
+		<control type="group">
+			<visible>StringCompare(Window.Property(Weather.CurrentView),regional)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="label">
+				<description>header label</description>
+				<posx>20</posx>
+				<posy>13</posy>
+				<width>610</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>31804</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="textbox" id="56">
+			      <description>My first text box control</description>
+			      <posx>15</posx>
+			      <posy>60</posy>
+			      <width>600</width>
+			      <height>541</height>
+			      <font>font12</font>
+			      <textcolor>white</textcolor>
+	            <pagecontrol>57</pagecontrol>
+			      <label>[B]$INFO[Window.Property(Regional.Period0.Title)][/B][CR][CR]$INFO[Window.Property(Regional.Period0.Content)][CR][CR][B]$INFO[Window.Property(Regional.Period1.Title)][/B][CR][CR]$INFO[Window.Property(Regional.Period1.Content)][CR][CR][B]$INFO[Window.Property(Regional.Period2.Title)][/B][CR][CR]$INFO[Window.Property(Regional.Period2.Content)][CR][CR][B]$INFO[Window.Property(Regional.Period3.Title)][/B][CR][CR]$INFO[Window.Property(Regional.Period3.Content)][CR][CR][B]$INFO[Window.Property(Regional.Period4.Title)][/B][CR][CR]$INFO[Window.Property(Regional.Period4.Content)][CR][CR][B]$INFO[Window.Property(Regional.Period5.Title)][/B][CR][CR]$INFO[Window.Property(Regional.Period5.Content)]</label>
+			</control>			
+			<control type="scrollbar" id="57">
+				<posx>615</posx>
+				<posy>60</posy>
+				<width>25</width>
+				<height>540</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onleft>51</onleft>
+				<onright>9000</onright>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(56)</visible>
+			</control>
+		</control>
+	</include>
+</includes>

@@ -476,7 +476,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!StringCompare(Weather.Plugin,weather.wunderground)</visible>
+				<visible>!StringCompare(Weather.Plugin,weather.wunderground) + !StringCompare(Weather.Plugin,weather.metoffice)</visible>
 				<posx>580</posx>
 				<posy>40</posy>
 				<control type="image">
@@ -805,7 +805,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
+				<visible>StringCompare(Weather.Plugin,weather.metoffice)|StringCompare(Weather.Plugin,weather.wunderground)</visible>
 				<posx>580</posx>
 				<posy>40</posy>
 				<control type="image">
@@ -836,6 +836,8 @@
 					<include condition="StringCompare(Weather.Plugin,weather.wunderground)">WeatherWeekendForcast</include>
 					<include condition="StringCompare(Weather.Plugin,weather.wunderground)">WeatherHourlyForcast</include>
 					<include condition="StringCompare(Weather.Plugin,weather.wunderground)">WeatherMapAlerts</include>
+					<include condition="StringCompare(Weather.Plugin,weather.metoffice)">WeatherRegionalForcast</include>
+					<include condition="StringCompare(Weather.Plugin,weather.metoffice)">WeatherDailyForcast</include>
 				</control>
 			</control>
 		</control>
@@ -930,6 +932,22 @@
 					<label>31910</label>
 					<onfocus>SetProperty(Weather.CurrentView,map)</onfocus>
 					<visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
+				</control>
+				<control type="button" id="307">
+					<description>5 Day forcast button</description>
+					<textwidth>235</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31803</label>
+					<onfocus>ClearProperty(Weather.CurrentView)</onfocus>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+				</control>
+				<control type="button" id="308">
+					<description>Regional Text forcast button</description>
+					<textwidth>235</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31804</label>
+					<onfocus>SetProperty(Weather.CurrentView,regional)</onfocus>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
 				</control>
 				<control type="label" id="201">
 					<width>250</width>
