@@ -109,7 +109,6 @@
 				</control>
 				<control type="textbox">
 					<width>590</width>
-					<height>100</height>
 					<font>font12</font>
 					<label>$INFO[Window.Property(Regional.Period4.Content)]</label>					
 				</control>
@@ -140,11 +139,13 @@
 					<width>590</width>
 					<font>font13_title</font>
 					<align>center</align>
+					<visible>!IsEmpty($INFO[Window.Property(Regional.Period6.Title)])</visible>
 					<label>$INFO[Window.Property(Regional.Period6.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<font>font12</font>
+					<visible>!IsEmpty($INFO[Window.Property(Regional.Period6.Title)])</visible>
 					<label>$INFO[Window.Property(Regional.Period6.Content)]</label>					
 				</control>
 			</control>
