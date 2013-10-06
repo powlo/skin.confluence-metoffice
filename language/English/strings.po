@@ -621,6 +621,14 @@ msgctxt "#31804"
 msgid "Regional Text Forecast"
 msgstr ""
 
+msgctxt "#31805"
+msgid "3 Hour Forecast"
+msgstr ""
+
+msgctxt "#31806"
+msgid "Precipitation Probability"
+msgstr ""
+
 #empty strings from id 31512 to 31900
 #Weather plugin
 

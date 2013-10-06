@@ -19,6 +19,7 @@
 	<include file="weather\MapAlerts.xml" />
 	<include file="weather\RegionalForecast.xml" />
 	<include file="weather\DailyForecast.xml" />
+	<include file="weather\3HourForecast.xml" />
 
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>

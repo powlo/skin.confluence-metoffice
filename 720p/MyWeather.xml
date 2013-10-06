@@ -838,6 +838,7 @@
 					<include condition="StringCompare(Weather.Plugin,weather.wunderground)">WeatherMapAlerts</include>
 					<include condition="StringCompare(Weather.Plugin,weather.metoffice)">WeatherRegionalForcast</include>
 					<include condition="StringCompare(Weather.Plugin,weather.metoffice)">WeatherDailyForcast</include>
+					<include condition="StringCompare(Weather.Plugin,weather.metoffice)">Weather3HourForcast</include>
 				</control>
 			</control>
 		</control>
@@ -947,6 +948,14 @@
 					<include>ButtonCommonValues</include>
 					<label>31804</label>
 					<onfocus>SetProperty(Weather.CurrentView,regional)</onfocus>
+					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
+				</control>
+				<control type="button" id="309">
+					<description>3 Hour Forecast button</description>
+					<textwidth>235</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31805</label>
+					<onfocus>SetProperty(Weather.CurrentView,3hour)</onfocus>
 					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
 				</control>
 				<control type="label" id="201">
