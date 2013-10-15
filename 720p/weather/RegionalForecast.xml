@@ -133,7 +133,7 @@
 				<control type="image">
 					<width>590</width>
 					<height>2</height>
-					<visible>!IsEmpty($INFO[Window.Property(Regional.Period6.Title)])</visible>
+					<visible>!IsEmpty(Window.Property(Regional.Period6.Title))</visible>
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">
@@ -141,13 +141,13 @@
 					<width>590</width>
 					<font>font13_title</font>
 					<align>center</align>
-					<visible>!IsEmpty($INFO[Window.Property(Regional.Period6.Title)])</visible>
+					<visible>!IsEmpty(Window.Property(Regional.Period6.Title))</visible>
 					<label>$INFO[Window.Property(Regional.Period6.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<font>font12</font>
-					<visible>!IsEmpty($INFO[Window.Property(Regional.Period6.Title)])</visible>
+					<visible>!IsEmpty(Window.Property(Regional.Period6.Title))</visible>
 					<label>$INFO[Window.Property(Regional.Period6.Content)]</label>					
 				</control>
 			</control>
