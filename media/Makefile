@@ -1,5 +1,5 @@
 TARGET=Textures.xbt
-XBMCTEX=/build/buildd/xbmc-13.0~git20130901.0828-alpha7/tools/TexturePacker/TexturePacker
+XBMCTEX=/build/buildd/xbmc-13.0~git20131002.1125-alpha8/tools/TexturePacker/TexturePacker
 
 IMAGES := $(shell find . -name "*jpg")
 IMAGES += $(shell find . -name "*png")
@@ -10,14 +10,14 @@ all: $(TARGET)
 .PHONY: force
 
 $(TARGET): $(XBMCTEX) $(IMAGES)
-ifeq (,1)
+ifeq (i486-linux,arm)
 	$(XBMCTEX) -use_none -input . -output $(TARGET)
 else
 	$(XBMCTEX) -input . -output $(TARGET)
 
 endif
 $(XBMCTEX): force
-	$(MAKE) -C /build/buildd/xbmc-13.0~git20130901.0828-alpha7/tools/TexturePacker
+	$(MAKE) -C /build/buildd/xbmc-13.0~git20131002.1125-alpha8/tools/TexturePacker
 
 clean:
 	rm -f $(TARGET)
