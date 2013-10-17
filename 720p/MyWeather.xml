@@ -947,7 +947,7 @@
 					<textwidth>235</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>31804</label>
-					<onfocus>SetProperty(Weather.CurrentView,regional)</onfocus>
+					<onfocus>RunScript(weather.metoffice, RegionalForecast)</onfocus>
 					<visible>StringCompare(Weather.Plugin,weather.metoffice)</visible>
 				</control>
 				<control type="button" id="309">
