@@ -18,7 +18,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="grouplist" id="56">
-				<posx>40</posx>
+				<posx>15</posx>
 				<posy>60</posy>
 				<width>600</width>
 				<height>540</height>
@@ -29,17 +29,17 @@
 				<onleft>56</onleft>
 				<onright>9000</onright>
 				<control type="label">
-					<height>30</height>			
 					<width>590</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Period0.Title)]</label>
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph0.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<height>60</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Period0.Content)]</label>					
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph0.Content)]</label>
 				</control>
 				<control type="image">
 					<width>590</width>
@@ -47,17 +47,17 @@
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">
-					<height>30</height>
 					<width>590</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Period1.Title)]</label>
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph1.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<height>100</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Period1.Content)]</label>					
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph1.Content)]</label>
 				</control>
 				<control type="image">
 					<width>590</width>
@@ -65,35 +65,38 @@
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">					
-					<height>30</height>			
 					<width>590</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Period2.Title)]</label>
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph2.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<height>100</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Period2.Content)]</label>					
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph2.Content)]</label>
 				</control>
 				<control type="image">
 					<width>590</width>
 					<height>2</height>
 					<texture>separator.png</texture>
+					<visible>!IsEmpty(Window.Property(Regional.day1to2.Paragraph3.Title))</visible>
 				</control>
 				<control type="label">
-					<height>30</height>			
 					<width>590</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Period3.Title)]</label>
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph3.Title)]</label>
+					<visible>!IsEmpty(Window.Property(Regional.day1to2.Paragraph3.Title))</visible>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<height>100</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Period3.Content)]</label>					
+					<label>$INFO[Window.Property(Regional.day1to2.Paragraph3.Content)]</label>
+					<visible>!IsEmpty(Window.Property(Regional.day1to2.Paragraph3.Title))</visible>
 				</control>
 				<control type="image">
 					<width>590</width>
@@ -105,13 +108,13 @@
 					<width>590</width>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Period4.Title)]</label>
+					<label>$INFO[Window.Property(Regional.day3to5.Paragraph0.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
-					<height>270</height>
+					<height>100</height>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Period4.Content)]</label>					
+					<label>$INFO[Window.Property(Regional.day3to5.Paragraph0.Content)]</label>
 				</control>
 				<control type="image">
 					<width>590</width>
@@ -123,17 +126,16 @@
 					<width>590</width>
 					<font>font13_title</font>
 					<align>center</align>
-					<label>$INFO[Window.Property(Regional.Period5.Title)]</label>
+					<label>$INFO[Window.Property(Regional.day6to15.Paragraph0.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<font>font12</font>
-					<label>$INFO[Window.Property(Regional.Period5.Content)]</label>					
+					<label>$INFO[Window.Property(Regional.day6to15.Paragraph0.Content)]</label>
 				</control>
 				<control type="image">
 					<width>590</width>
 					<height>2</height>
-					<visible>!IsEmpty(Window.Property(Regional.Period6.Title))</visible>
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">
@@ -141,14 +143,12 @@
 					<width>590</width>
 					<font>font13_title</font>
 					<align>center</align>
-					<visible>!IsEmpty(Window.Property(Regional.Period6.Title))</visible>
-					<label>$INFO[Window.Property(Regional.Period6.Title)]</label>
+					<label>$INFO[Window.Property(Regional.day16to30.Paragraph0.Title)]</label>
 				</control>
 				<control type="textbox">
 					<width>590</width>
 					<font>font12</font>
-					<visible>!IsEmpty(Window.Property(Regional.Period6.Title))</visible>
-					<label>$INFO[Window.Property(Regional.Period6.Content)]</label>					
+					<label>$INFO[Window.Property(Regional.day16to30.Paragraph0.Content)]</label>
 				</control>
 			</control>
 			<control type="scrollbar" id="57">
