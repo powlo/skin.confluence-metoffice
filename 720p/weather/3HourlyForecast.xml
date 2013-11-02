@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="Weather3HourForcast">
+	<include name="Weather3HourlyForcast">
 		<control type="group">
-			<visible>StringCompare(Window.Property(Weather.CurrentView),3hour)</visible>
+			<visible>StringCompare(Window.Property(Weather.CurrentView),3hourly)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
