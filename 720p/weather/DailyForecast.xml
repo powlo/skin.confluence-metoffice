@@ -50,24 +50,17 @@
 				<viewtype label="535">list</viewtype>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="135" width="600">
+				<itemlayout height="100" width="600">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>600</width>
-						<height>136</height>
-						<texture border="0,5,0,5">MenuItemNF.png</texture>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>600</width>
-						<height>136</height>
+						<height>100</height>
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>5</posy>
+						<posx>50</posx>
+						<posy>30</posy>
 						<width>300</width>
 						<height>25</height>
 						<font>font13_title</font>
@@ -79,46 +72,36 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>460</posx>
+						<posx>100</posx>
 						<posy>0</posy>
-						<width>135</width>
-						<height>135</height>
+						<width>100</width>
+						<height>100</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>35</posy>
-						<width>390</width>
-						<height>30</height>
-						<font>font13</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[ListItem.Property(HighTemp)]$INFO[ListItem.Property(TempUnits)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[ListItem.Property(LowTemp)]$INFO[ListItem.Property(TempUnits)]</label>
-						<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
+					<control type="image">
+						<posx>220</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualDayTempIcon)]</texture>
 					</control>
-					<control type="textbox">
-						<posx>30</posx>
-						<posy>70</posy>
-						<width>400</width>
-						<height>50</height>
-						<font>font13</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<label>$INFO[ListItem.Property(Outlook)]</label>
+					<control type="image">
+						<posx>320</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualNightTempIcon)]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout height="135" width="600">
+				<focusedlayout height="100" width="600">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>600</width>
-						<height>136</height>
+						<height>100</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
@@ -127,7 +110,7 @@
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>600</width>
-						<height>136</height>
+						<height>100</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
@@ -136,14 +119,14 @@
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>600</width>
-						<height>136</height>
+						<height>100</height>
 						<texture border="10">button-focus2.png</texture>
 						<visible>Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>5</posy>
+						<posx>50</posx>
+						<posy>30</posy>
 						<width>300</width>
 						<height>25</height>
 						<font>font13_title</font>
@@ -155,38 +138,28 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>460</posx>
+						<posx>100</posx>
 						<posy>0</posy>
-						<width>135</width>
-						<height>135</height>
+						<width>100</width>
+						<height>100</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>35</posy>
-						<width>390</width>
-						<height>30</height>
-						<font>font13</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[ListItem.Property(HighTemp)]$INFO[ListItem.Property(TempUnits)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[ListItem.Property(LowTemp)]$INFO[ListItem.Property(TempUnits)]</label>
-						<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
+					<control type="image">
+						<posx>220</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualDayTempIcon)]</texture>
 					</control>
-					<control type="textbox">
-						<posx>30</posx>
-						<posy>70</posy>
-						<width>400</width>
-						<height>50</height>
-						<font>font13</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<label>$INFO[ListItem.Property(Outlook)]</label>
+					<control type="image">
+						<posx>320</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualNightTempIcon)]</texture>
 					</control>
 				</focusedlayout>
 				<content>
@@ -199,8 +172,8 @@
 					<item>
 						<label>$INFO[Window.Property(Forecast.Day0.Day.Title)]</label>
 						<icon>$INFO[Window.Property(Forecast.Day0.Day.OutlookIcon)]</icon>
-						<property name="HighTemp">$INFO[Window.Property(Forecast.Day0.Day.Dm)]</property>
-						<property name="LowTemp">$INFO[Window.Property(Forecast.Day0.Night.Nm)]</property>
+						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day0.Day.ActualTempIcon)]</property>
+						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day0.Night.ActualTempIcon)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day0.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -209,8 +182,8 @@
 					<item>
 						<label>$INFO[Window.Property(Forecast.Day1.Day.Title)]</label>
 						<icon>$INFO[Window.Property(Forecast.Day1.Day.OutlookIcon)]</icon>
-						<property name="HighTemp">$INFO[Window.Property(Forecast.Day1.Day.Dm)]</property>
-						<property name="LowTemp">$INFO[Window.Property(Forecast.Day1.Night.Nm)]</property>
+						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day1.Day.ActualTempIcon)]</property>
+						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day1.Night.ActualTempIcon)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -219,8 +192,8 @@
 					<item>
 						<label>$INFO[Window.Property(Forecast.Day2.Day.Title)]</label>
 						<icon>$INFO[Window.Property(Forecast.Day2.Day.OutlookIcon)]</icon>
-						<property name="HighTemp">$INFO[Window.Property(Forecast.Day2.Day.Dm)]</property>
-						<property name="LowTemp">$INFO[Window.Property(Forecast.Day2.Night.Nm)]</property>
+						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day2.Day.ActualTempIcon)]</property>
+						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day2.Night.ActualTempIcon)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day2.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -229,8 +202,8 @@
 					<item>
 						<label>$INFO[Window.Property(Forecast.Day3.Day.Title)]</label>
 						<icon>$INFO[Window.Property(Forecast.Day3.Day.OutlookIcon)]</icon>
-						<property name="HighTemp">$INFO[Window.Property(Forecast.Day3.Day.Dm)]</property>
-						<property name="LowTemp">$INFO[Window.Property(Forecast.Day3.Night.Nm)]</property>
+						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day3.Day.ActualTempIcon)]</property>
+						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day3.Night.ActualTempIcon)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day3.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -239,8 +212,9 @@
 					<item>
 						<label>$INFO[Window.Property(Forecast.Day4.Day.Title)]</label>
 						<icon>$INFO[Window.Property(Forecast.Day4.Day.OutlookIcon)]</icon>
-						<property name="HighTemp">$INFO[Window.Property(Forecast.Day4.Day.Dm)]</property>
-						<property name="LowTemp">$INFO[Window.Property(Forecast.Day4.Night.Nm)]</property>
+						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day4.Day.ActualTempIcon)]</property>
+						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day4.Night.ActualTempIcon)]</property>
+
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day4.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
