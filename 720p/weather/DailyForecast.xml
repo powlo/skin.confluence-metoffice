@@ -95,6 +95,26 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualNightTempIcon)]</texture>
 					</control>
+					<control type="image">
+						<posx>420</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
+					</control>
+					<control type="label">
+						<description>wind speed text</description>
+						<posx>455</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(WindSpeed)]</label>
+						<textcolor>black</textcolor>
+					</control>
 				</itemlayout>
 				<focusedlayout height="100" width="600">
 					<control type="image">
@@ -161,6 +181,26 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualNightTempIcon)]</texture>
 					</control>
+					<control type="image">
+						<posx>420</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
+					</control>
+					<control type="label">
+						<description>wind speed text</description>
+						<posx>455</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(WindSpeed)]</label>
+						<textcolor>black</textcolor>
+					</control>
 				</focusedlayout>
 				<content>
 					<item>
@@ -174,6 +214,8 @@
 						<icon>$INFO[Window.Property(Forecast.Day0.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day0.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day0.Night.ActualTempIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Day.WindIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day0.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -184,6 +226,8 @@
 						<icon>$INFO[Window.Property(Forecast.Day1.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day1.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day1.Night.ActualTempIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Day.WindIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -194,6 +238,8 @@
 						<icon>$INFO[Window.Property(Forecast.Day2.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day2.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day2.Night.ActualTempIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Day.WindIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day2.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -204,6 +250,8 @@
 						<icon>$INFO[Window.Property(Forecast.Day3.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day3.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day3.Night.ActualTempIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Day.WindIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day3.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
@@ -214,7 +262,8 @@
 						<icon>$INFO[Window.Property(Forecast.Day4.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day4.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day4.Night.ActualTempIcon)]</property>
-
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Day.WindIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day4.Day.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 						<onclick>noop</onclick>
