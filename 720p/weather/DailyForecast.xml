@@ -80,23 +80,39 @@
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="image">
-						<posx>220</posx>
-						<posy>15</posy>
-						<width>70</width>
-						<height>70</height>
+						<posx>240</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualDayTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>320</posx>
-						<posy>15</posy>
-						<width>70</width>
-						<height>70</height>
+						<posx>240</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>340</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualNightTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>420</posx>
+						<posx>340</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>430</posx>
 						<posy>15</posy>
 						<width>70</width>
 						<height>70</height>
@@ -105,7 +121,7 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>455</posx>
+						<posx>465</posx>
 						<posy>15</posy>
 						<width>70</width>
 						<height>70</height>
@@ -117,24 +133,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="100" width="600">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>600</width>
-						<height>100</height>
-						<texture border="0,2,0,2">MenuItemNF.png</texture>
-						<visible>!Control.HasFocus(51)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>600</width>
-						<height>100</height>
-						<texture border="0,2,0,2">MenuItemNF.png</texture>
-						<visible>!Control.HasFocus(51)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -166,23 +164,39 @@
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="image">
-						<posx>220</posx>
-						<posy>15</posy>
-						<width>70</width>
-						<height>70</height>
+						<posx>240</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualDayTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>320</posx>
-						<posy>15</posy>
-						<width>70</width>
-						<height>70</height>
+						<posx>240</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>340</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Property(ActualNightTempIcon)]</texture>
 					</control>
 					<control type="image">
-						<posx>420</posx>
+						<posx>340</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>430</posx>
 						<posy>15</posy>
 						<width>70</width>
 						<height>70</height>
@@ -191,7 +205,7 @@
 					</control>
 					<control type="label">
 						<description>wind speed text</description>
-						<posx>455</posx>
+						<posx>465</posx>
 						<posy>15</posy>
 						<width>70</width>
 						<height>70</height>
@@ -214,6 +228,7 @@
 						<icon>$INFO[Window.Property(Forecast.Day0.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day0.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day0.Night.ActualTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Day.WindIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day0.Day.Outlook)]</property>
@@ -226,6 +241,7 @@
 						<icon>$INFO[Window.Property(Forecast.Day1.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day1.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day1.Night.ActualTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Day.WindIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
@@ -238,6 +254,7 @@
 						<icon>$INFO[Window.Property(Forecast.Day2.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day2.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day2.Night.ActualTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Day.WindIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day2.Day.Outlook)]</property>
@@ -250,6 +267,7 @@
 						<icon>$INFO[Window.Property(Forecast.Day3.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day3.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day3.Night.ActualTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Day.WindIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day3.Day.Outlook)]</property>
@@ -262,6 +280,7 @@
 						<icon>$INFO[Window.Property(Forecast.Day4.Day.OutlookIcon)]</icon>
 						<property name="ActualDayTempIcon">$INFO[Window.Property(Forecast.Day4.Day.ActualTempIcon)]</property>
 						<property name="ActualNightTempIcon">$INFO[Window.Property(Forecast.Day4.Night.ActualTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Day.WindIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Day.S)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day4.Day.Outlook)]</property>
