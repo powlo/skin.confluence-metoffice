@@ -29,64 +29,111 @@
 				<viewtype label="535">list</viewtype>
 				<pagecontrol>62</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="135" width="600">
+				<itemlayout height="100" width="600">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>600</width>
-						<height>136</height>
+						<height>100</height>
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<posx>50</posx>
-						<posy>0</posy>
+						<posx>30</posx>
+						<posy>25</posy>
 						<width>100</width>
-						<height>120</height>
+						<height>70</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>110</posx>
-						<posy>5</posy>
-						<width>80</width>
-						<height>80</height>
+						<posx>100</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture>$INFO[ListItem.ActualIcon]</texture>
+					</control>
+					<control type="image">
+						<posx>200</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>200</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>270</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(FeelsLikeTempIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>270</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(FeelsLikeTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>340</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
 					</control>
 					<control type="label">
-						<posx>590</posx>
-						<posy>5</posy>
-						<width>390</width>
-						<height>100</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
-					</control>
-					<control type="textbox">
-						<posx>0</posx>
-						<posy>80</posy>
-						<width>590</width>
-						<height>50</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<description>wind speed text</description>
+						<posx>375</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
 						<align>center</align>
-						<label>$INFO[ListItem.ActualIcon]</label>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(WindSpeed)]</label>
+						<textcolor>black</textcolor>
+					</control>
+					<control type="image">
+						<posx>420</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(GustIcon)]</texture>
+					</control>
+					<control type="label">
+						<description>wind speed text</description>
+						<posx>455</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(GustSpeed)]</label>
+						<textcolor>black</textcolor>
 					</control>
 				</itemlayout>
-				<focusedlayout height="135" width="600">
+				<focusedlayout height="100" width="600">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>600</width>
-						<height>136</height>
+						<height>100</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(52)</visible>
 						<include>VisibleFadeEffect</include>
@@ -95,373 +142,700 @@
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>600</width>
-						<height>136</height>
+						<height>100</height>
 						<texture border="10">button-focus2.png</texture>
 						<visible>Control.HasFocus(52)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<posx>50</posx>
-						<posy>0</posy>
+						<posx>30</posx>
+						<posy>25</posy>
 						<width>100</width>
-						<height>120</height>
+						<height>70</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>110</posx>
-						<posy>5</posy>
-						<width>80</width>
-						<height>80</height>
+						<posx>100</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture>$INFO[ListItem.ActualIcon]</texture>
+					</control>
+					<control type="image">
+						<posx>200</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>200</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(ActualTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>270</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(FeelsLikeTempIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>270</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(FeelsLikeTempFrameIcon)]</texture>
+					</control>
+					<control type="image">
+						<posx>340</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(WindIcon)]</texture>
 					</control>
 					<control type="label">
-						<posx>590</posx>
-						<posy>5</posy>
-						<width>390</width>
-						<height>100</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
-					</control>
-					<control type="textbox">
-						<posx>0</posx>
-						<posy>80</posy>
-						<width>590</width>
-						<height>50</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<description>wind speed text</description>
+						<posx>375</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
 						<align>center</align>
-						<label>$INFO[ListItem.ActualIcon]</label>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(WindSpeed)]</label>
+						<textcolor>black</textcolor>
+					</control>
+					<control type="image">
+						<posx>420</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(GustIcon)]</texture>
+					</control>
+					<control type="label">
+						<description>wind speed text</description>
+						<posx>455</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(GustSpeed)]</label>
+						<textcolor>black</textcolor>
 					</control>
 				</focusedlayout>
 				<content>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour0.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour0.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour0.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour0.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour0.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour0.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour0.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour0.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour0.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour0.S)] mph $INFO[Window.Property(Forecast.Day0.Hour0.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour0.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour0.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour0.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour0.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour0.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour0.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour0.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour0.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour3.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour3.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour3.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour3.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour3.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour3.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour3.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour3.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour3.S)] mph $INFO[Window.Property(Forecast.Day0.Hour3.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour3.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour3.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour3.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour3.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour3.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour3.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour3.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour3.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour6.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour6.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour6.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour6.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour6.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour6.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour6.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour6.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour6.S)] mph $INFO[Window.Property(Forecast.Day0.Hour6.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour6.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour6.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour6.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour6.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour6.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour6.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour6.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour6.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour9.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour9.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour9.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour9.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour9.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour9.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour9.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour9.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour9.S)] mph $INFO[Window.Property(Forecast.Day0.Hour9.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour9.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour9.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour9.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour9.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour9.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour9.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour9.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour9.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour12.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour12.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour12.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour12.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour12.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour12.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour12.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour12.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour12.S)] mph $INFO[Window.Property(Forecast.Day0.Hour12.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour12.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour12.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour12.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour12.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour12.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour12.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour12.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour12.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour15.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour15.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour15.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour15.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour15.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour15.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour15.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour15.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour15.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour15.S)] mph $INFO[Window.Property(Forecast.Day0.Hour15.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour15.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour15.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour15.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour15.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour15.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour15.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour15.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour15.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour18.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour18.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour18.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour18.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour18.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour18.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour18.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour18.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour18.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour18.S)] mph $INFO[Window.Property(Forecast.Day0.Hour18.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour18.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour18.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour18.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour18.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour18.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour18.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour18.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour18.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour21.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day0.Hour21.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day0.Hour21.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour21.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour21.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour21.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day0.Hour21.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day0.Hour21.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour21.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day0.Hour21.S)] mph $INFO[Window.Property(Forecast.Day0.Hour21.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day0.Hour21.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour21.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour21.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour21.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour21.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour21.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour21.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour21.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour0.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour0.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour0.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour0.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour0.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour0.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour0.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour0.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour0.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour0.S)] mph $INFO[Window.Property(Forecast.Day1.Hour0.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour0.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour0.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour0.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour0.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour0.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour0.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour0.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour0.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour3.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour3.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour3.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour3.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour3.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour3.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour3.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour3.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour3.S)] mph $INFO[Window.Property(Forecast.Day1.Hour3.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour3.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour3.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour3.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour3.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour3.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour3.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour3.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour3.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour6.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour6.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour6.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour6.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour6.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour6.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour6.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour6.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour6.S)] mph $INFO[Window.Property(Forecast.Day1.Hour6.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour6.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour6.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour6.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour6.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour6.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour6.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour6.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour6.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour9.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour9.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour9.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour9.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour9.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour9.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour9.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour9.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour9.S)] mph $INFO[Window.Property(Forecast.Day1.Hour9.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour9.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour9.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour9.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour9.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour9.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour9.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour9.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour9.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour12.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour12.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour12.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour12.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour12.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour12.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour12.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour12.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour12.S)] mph $INFO[Window.Property(Forecast.Day1.Hour12.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour12.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour12.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour12.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour12.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour12.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour12.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour12.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour12.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour15.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour15.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour15.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour15.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour15.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour15.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour15.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour15.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour15.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour15.S)] mph $INFO[Window.Property(Forecast.Day1.Hour15.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour15.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour15.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour15.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour15.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour15.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour15.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour15.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour15.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour18.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour18.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour18.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour18.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour18.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour18.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour18.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour18.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour18.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour18.S)] mph $INFO[Window.Property(Forecast.Day1.Hour18.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour18.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour18.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour18.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour18.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour18.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour18.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour18.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour18.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour21.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day1.Hour21.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day1.Hour21.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour21.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour21.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour21.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day1.Hour21.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day1.Hour21.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour21.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day1.Hour21.S)] mph $INFO[Window.Property(Forecast.Day1.Hour21.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day1.Hour21.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour21.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour21.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour21.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour21.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour21.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour21.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour21.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour0.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour0.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour0.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour0.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour0.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour0.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour0.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour0.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour0.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour0.S)] mph $INFO[Window.Property(Forecast.Day2.Hour0.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour0.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour0.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour0.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour0.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour0.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour0.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour0.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour0.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour3.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour3.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour3.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour3.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour3.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour3.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour3.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour3.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour3.S)] mph $INFO[Window.Property(Forecast.Day2.Hour3.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour3.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour3.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour3.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour3.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour3.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour3.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour3.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour3.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour6.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour6.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour6.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour6.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour6.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour6.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour6.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour6.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour6.S)] mph $INFO[Window.Property(Forecast.Day2.Hour6.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour6.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour6.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour6.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour6.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour6.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour6.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour6.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour6.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour9.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour9.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour9.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour9.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour9.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour9.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour9.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour9.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour9.S)] mph $INFO[Window.Property(Forecast.Day2.Hour9.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour9.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour9.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour9.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour9.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour9.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour9.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour9.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour9.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour12.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour12.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour12.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour12.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour12.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour12.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour12.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour12.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour12.S)] mph $INFO[Window.Property(Forecast.Day2.Hour12.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour12.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour12.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour12.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour12.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour12.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour12.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour12.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour12.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour15.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour15.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour15.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour15.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour15.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour15.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour15.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour15.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour15.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour15.S)] mph $INFO[Window.Property(Forecast.Day2.Hour15.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour15.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour15.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour15.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour15.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour15.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour15.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour15.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour15.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour18.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour18.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour18.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour18.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour18.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour18.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour18.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour18.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour18.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour18.S)] mph $INFO[Window.Property(Forecast.Day2.Hour18.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour18.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour18.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour18.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour18.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour18.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour18.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour18.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour18.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour21.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day2.Hour21.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day2.Hour21.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour21.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour21.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour21.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day2.Hour21.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day2.Hour21.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour21.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day2.Hour21.S)] mph $INFO[Window.Property(Forecast.Day2.Hour21.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day2.Hour21.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour21.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour21.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour21.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour21.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour21.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour21.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour21.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour0.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour0.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour0.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour0.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour0.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour0.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour0.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour0.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour0.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour0.S)] mph $INFO[Window.Property(Forecast.Day3.Hour0.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour0.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour0.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour0.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour0.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour0.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour0.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour0.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour0.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour3.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour3.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour3.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour3.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour3.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour3.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour3.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour3.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour3.S)] mph $INFO[Window.Property(Forecast.Day3.Hour3.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour3.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour3.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour3.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour3.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour3.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour3.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour3.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour3.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour6.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour6.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour6.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour6.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour6.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour6.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour6.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour6.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour6.S)] mph $INFO[Window.Property(Forecast.Day3.Hour6.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour6.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour6.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour6.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour6.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour6.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour6.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour6.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour6.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour9.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour9.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour9.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour9.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour9.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour9.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour9.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour9.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour9.S)] mph $INFO[Window.Property(Forecast.Day3.Hour9.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour9.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour9.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour9.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour9.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour9.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour9.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour9.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour9.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour12.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour12.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour12.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour12.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour12.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour12.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour12.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour12.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour12.S)] mph $INFO[Window.Property(Forecast.Day3.Hour12.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour12.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour12.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour12.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour12.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour12.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour12.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour12.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour12.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour15.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour15.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour15.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour15.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour15.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour15.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour15.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour15.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour15.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour15.S)] mph $INFO[Window.Property(Forecast.Day3.Hour15.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour15.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour15.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour15.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour15.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour15.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour15.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour15.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour15.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour18.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour18.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour18.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour18.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour18.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour18.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour18.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour18.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour18.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour18.S)] mph $INFO[Window.Property(Forecast.Day3.Hour18.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour18.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour18.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour18.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour18.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour18.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour18.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour18.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour18.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour21.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day3.Hour21.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day3.Hour21.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour21.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour21.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour21.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day3.Hour21.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day3.Hour21.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour21.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day3.Hour21.S)] mph $INFO[Window.Property(Forecast.Day3.Hour21.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day3.Hour21.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour21.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour21.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour21.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour21.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour21.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour21.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour21.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour0.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour0.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour0.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour0.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour0.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour0.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour0.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour0.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour0.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour0.S)] mph $INFO[Window.Property(Forecast.Day4.Hour0.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour0.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour0.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour0.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour0.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour0.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour0.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour0.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour0.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour3.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour3.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour3.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour3.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour3.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour3.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour3.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour3.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour3.S)] mph $INFO[Window.Property(Forecast.Day4.Hour3.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour3.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour3.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour3.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour3.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour3.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour3.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour3.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour3.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour6.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour6.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour6.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour6.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour6.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour6.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour6.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour6.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour6.S)] mph $INFO[Window.Property(Forecast.Day4.Hour6.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour6.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour6.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour6.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour6.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour6.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour6.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour6.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour6.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour9.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour9.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour9.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour9.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour9.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour9.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour9.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour9.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour9.S)] mph $INFO[Window.Property(Forecast.Day4.Hour9.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour9.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour9.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour9.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour9.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour9.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour9.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour9.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour9.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour12.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour12.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour12.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour12.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour12.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour12.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour12.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour12.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour12.S)] mph $INFO[Window.Property(Forecast.Day4.Hour12.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour12.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour12.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour12.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour12.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour12.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour12.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour12.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour12.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour15.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour15.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour15.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour15.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour15.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour15.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour15.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour15.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour15.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour15.S)] mph $INFO[Window.Property(Forecast.Day4.Hour15.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour15.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour15.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour15.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour15.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour15.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour15.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour15.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour15.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour18.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour18.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour18.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour18.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour18.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour18.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour18.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour18.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour18.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour18.S)] mph $INFO[Window.Property(Forecast.Day4.Hour18.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour18.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour18.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour18.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour18.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour18.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour18.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour18.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour18.Title))</visible>
 					</item>
 					<item>
 						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour21.Title)][/COLOR]</label>
-						<label2>$INFO[Window.Property(Forecast.Day4.Hour21.T),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Forecast.Day4.Hour21.F),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour21.H),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour21.Pp),[COLOR=grey2]$LOCALIZE[31806] :[/COLOR][B] ,%[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour21.V),[COLOR=grey2]Visibility :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Forecast.Day4.Hour21.U),[COLOR=grey2]Max UV :[/COLOR][B] ,[/B]]</label2>
-						<thumb>$INFO[Window.Property(Forecast.Day4.Hour21.OutlookIcon)]</thumb>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour21.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Forecast.Day4.Hour21.S)] mph $INFO[Window.Property(Forecast.Day4.Hour21.D)]</icon>
+						<icon>$INFO[Window.Property(Forecast.Day4.Hour21.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour21.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour21.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour21.WindIcon)]</property>
+						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour21.GustIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour21.S)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour21.G)]</property>
+						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour21.Title))</visible>
 					</item>
