@@ -55,6 +55,18 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
+					<control type="label">
+						<posx>170</posx>
+						<posy>55</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font12</font>
+						<align>right</align>
+						<aligny>right</aligny>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[ListItem.Property(Precipitation)]%</label>
+					</control>
 					<control type="image">
 						<posx>200</posx>
 						<posy>25</posy>
@@ -125,6 +137,26 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Property(GustSpeed)]</label>
+						<textcolor>black</textcolor>
+					</control>
+					<control type="image">
+						<posx>500</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(UVIcon)]</texture>
+					</control>
+					<control type="label">
+						<description>wind speed text</description>
+						<posx>525</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(UVIndex)]</label>
 						<textcolor>black</textcolor>
 					</control>
 				</itemlayout>
@@ -165,6 +197,16 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
+					<control type="label">
+						<posx>170</posx>
+						<posy>55</posy>
+						<width>70</width>
+						<font>font12</font>
+						<align>right</align>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[ListItem.Property(Precipitation)]%</label>
+					</control>
 					<control type="image">
 						<posx>200</posx>
 						<posy>25</posy>
@@ -237,6 +279,26 @@
 						<label>$INFO[ListItem.Property(GustSpeed)]</label>
 						<textcolor>black</textcolor>
 					</control>
+					<control type="image">
+						<posx>500</posx>
+						<posy>25</posy>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Property(UVIcon)]</texture>
+					</control>
+					<control type="label">
+						<description>wind speed text</description>
+						<posx>525</posx>
+						<posy>15</posy>
+						<width>70</width>
+						<height>70</height>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(UVIndex)]</label>
+						<textcolor>black</textcolor>
+					</control>
 				</focusedlayout>
 				<content>
 					<item>
@@ -250,6 +312,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour0.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour0.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour0.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour0.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour0.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour0.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour0.Title))</visible>
@@ -265,6 +330,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour3.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour3.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour3.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour3.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour3.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour3.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour3.Title))</visible>
@@ -280,6 +348,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour6.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour6.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour6.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour6.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour6.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour6.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour6.Title))</visible>
@@ -295,6 +366,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour9.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour9.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour9.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour9.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour9.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour9.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour9.Title))</visible>
@@ -310,6 +384,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour12.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour12.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour12.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour12.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour12.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour12.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour12.Title))</visible>
@@ -325,6 +402,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour15.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour15.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour15.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour15.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour15.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour15.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour15.Title))</visible>
@@ -340,6 +420,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour18.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour18.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour18.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour18.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour18.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour18.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour18.Title))</visible>
@@ -355,6 +438,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour21.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour21.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour21.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour21.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour21.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour21.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour21.Title))</visible>
@@ -370,6 +456,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour0.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour0.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour0.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour0.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour0.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour0.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour0.Title))</visible>
@@ -385,6 +474,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour3.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour3.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour3.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour3.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour3.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour3.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour3.Title))</visible>
@@ -400,6 +492,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour6.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour6.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour6.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour6.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour6.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour6.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour6.Title))</visible>
@@ -415,6 +510,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour9.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour9.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour9.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour9.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour9.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour9.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour9.Title))</visible>
@@ -430,6 +528,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour12.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour12.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour12.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour12.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour12.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour12.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour12.Title))</visible>
@@ -445,6 +546,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour15.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour15.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour15.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour15.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour15.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour15.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour15.Title))</visible>
@@ -460,6 +564,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour18.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour18.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour18.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour18.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour18.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour18.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour18.Title))</visible>
@@ -475,6 +582,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour21.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour21.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour21.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour21.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour21.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour21.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour21.Title))</visible>
@@ -490,6 +600,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour0.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour0.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour0.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour0.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour0.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour0.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour0.Title))</visible>
@@ -505,6 +618,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour3.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour3.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour3.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour3.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour3.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour3.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour3.Title))</visible>
@@ -520,6 +636,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour6.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour6.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour6.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour6.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour6.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour6.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour6.Title))</visible>
@@ -535,6 +654,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour9.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour9.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour9.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour9.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour9.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour9.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour9.Title))</visible>
@@ -550,6 +672,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour12.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour12.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour12.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour12.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour12.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour12.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour12.Title))</visible>
@@ -565,6 +690,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour15.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour15.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour15.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour15.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour15.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour15.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour15.Title))</visible>
@@ -580,6 +708,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour18.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour18.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour18.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour18.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour18.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour18.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour18.Title))</visible>
@@ -595,6 +726,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour21.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour21.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour21.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour21.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour21.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour21.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour21.Title))</visible>
@@ -610,6 +744,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour0.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour0.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour0.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour0.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour0.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour0.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour0.Title))</visible>
@@ -625,6 +762,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour3.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour3.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour3.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour3.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour3.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour3.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour3.Title))</visible>
@@ -640,6 +780,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour6.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour6.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour6.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour6.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour6.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour6.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour6.Title))</visible>
@@ -655,6 +798,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour9.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour9.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour9.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour9.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour9.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour9.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour9.Title))</visible>
@@ -670,6 +816,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour12.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour12.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour12.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour12.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour12.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour12.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour12.Title))</visible>
@@ -685,6 +834,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour15.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour15.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour15.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour15.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour15.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour15.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour15.Title))</visible>
@@ -700,6 +852,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour18.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour18.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour18.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour18.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour18.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour18.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour18.Title))</visible>
@@ -715,6 +870,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour21.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour21.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour21.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour21.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour21.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour21.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour21.Title))</visible>
@@ -730,6 +888,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour0.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour0.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour0.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour0.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour0.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour0.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour0.Title))</visible>
@@ -745,6 +906,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour3.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour3.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour3.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour3.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour3.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour3.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour3.Title))</visible>
@@ -760,6 +924,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour6.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour6.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour6.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour6.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour6.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour6.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour6.Title))</visible>
@@ -775,6 +942,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour9.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour9.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour9.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour9.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour9.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour9.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour9.Title))</visible>
@@ -790,6 +960,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour12.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour12.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour12.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour12.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour12.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour12.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour12.Title))</visible>
@@ -805,6 +978,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour15.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour15.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour15.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour15.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour15.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour15.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour15.Title))</visible>
@@ -820,6 +996,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour18.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour18.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour18.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour18.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour18.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour18.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour18.Title))</visible>
@@ -835,6 +1014,9 @@
 						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour21.GustIcon)]</property>
 						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour21.S)]</property>
 						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour21.G)]</property>
+						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour21.Pp)]</property>
+						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour21.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour21.U)]</property>
 						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour21.Title))</visible>
