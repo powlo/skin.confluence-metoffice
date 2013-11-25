@@ -302,724 +302,684 @@
 				</focusedlayout>
 				<content>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour0.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour0.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour0.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour0.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly0.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly0.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly0.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly0.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour0.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour0.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour0.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour0.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour0.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour0.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour0.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly0.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly0.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly0.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly0.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly0.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly0.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly0.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour0.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly0.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour3.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour3.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour3.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour3.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly1.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly1.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly1.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly1.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly1.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour3.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour3.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour3.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour3.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour3.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour3.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour3.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly1.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly1.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly1.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly1.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly1.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly1.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly1.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour3.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly1.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour6.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour6.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour6.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour6.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly2.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly2.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly2.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly2.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly2.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour6.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour6.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour6.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour6.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour6.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour6.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour6.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly2.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly2.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly2.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly2.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly2.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly2.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly2.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour6.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly2.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour9.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour9.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour9.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour9.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly3.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly3.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly3.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly3.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour9.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour9.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour9.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour9.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour9.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour9.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour9.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly3.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly3.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly3.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly3.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly3.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly3.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly3.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour9.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly3.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour12.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour12.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour12.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour12.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly4.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly4.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly4.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly4.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly4.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour12.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour12.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour12.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour12.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour12.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour12.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour12.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly4.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly4.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly4.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly4.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly4.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly4.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly4.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour12.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly4.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour15.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour15.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour15.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour15.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly5.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly5.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly5.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly5.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly5.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour15.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour15.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour15.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour15.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour15.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour15.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour15.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly5.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly5.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly5.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly5.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly5.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly5.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly5.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour15.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly5.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour18.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour18.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour18.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour18.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly6.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly6.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly6.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly6.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour18.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour18.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour18.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour18.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour18.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour18.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour18.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly6.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly6.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly6.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly6.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly6.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly6.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly6.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour18.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly6.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day0.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day0.Hour21.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day0.Hour21.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day0.Hour21.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day0.Hour21.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly7.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly7.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly7.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly7.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly7.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day0.Hour21.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day0.Hour21.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day0.Hour21.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day0.Hour21.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day0.Hour21.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day0.Hour21.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day0.Hour21.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly7.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly7.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly7.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly7.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly7.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly7.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly7.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day0.Hour21.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly7.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour0.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour0.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour0.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour0.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly8.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly8.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly8.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly8.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly8.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour0.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour0.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour0.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour0.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour0.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour0.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour0.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly8.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly8.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly8.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly8.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly8.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly8.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly8.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour0.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly8.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour3.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour3.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour3.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour3.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly9.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly9.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly9.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly9.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour3.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour3.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour3.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour3.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour3.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour3.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour3.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly9.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly9.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly9.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly9.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly9.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly9.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly9.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour3.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly9.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour6.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour6.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour6.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour6.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly10.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly10.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly10.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly10.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly10.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour6.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour6.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour6.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour6.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour6.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour6.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour6.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly10.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly10.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly10.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly10.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly10.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly10.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly10.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour6.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly10.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour9.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour9.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour9.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour9.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly11.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly11.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly11.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly11.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly11.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour9.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour9.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour9.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour9.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour9.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour9.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour9.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly11.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly11.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly11.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly11.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly11.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly11.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly11.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour9.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly11.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour12.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour12.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour12.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour12.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly12.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly12.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly12.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly12.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour12.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour12.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour12.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour12.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour12.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour12.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour12.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly12.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly12.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly12.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly12.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly12.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly12.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly12.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour12.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly12.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour15.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour15.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour15.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour15.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly13.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly13.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly13.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly13.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly13.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour15.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour15.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour15.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour15.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour15.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour15.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour15.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly13.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly13.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly13.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly13.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly13.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly13.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly13.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour15.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly13.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour18.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour18.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour18.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour18.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly14.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly14.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly14.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly14.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly14.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour18.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour18.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour18.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour18.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour18.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour18.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour18.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly14.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly14.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly14.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly14.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly14.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly14.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly14.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour18.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly14.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day1.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day1.Hour21.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day1.Hour21.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day1.Hour21.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day1.Hour21.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly15.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly15.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly15.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly15.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day1.Hour21.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day1.Hour21.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day1.Hour21.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day1.Hour21.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day1.Hour21.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day1.Hour21.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day1.Hour21.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly15.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly15.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly15.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly15.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly15.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly15.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly15.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day1.Hour21.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly15.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour0.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour0.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour0.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour0.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly16.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly16.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly16.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly16.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly16.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour0.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour0.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour0.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour0.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour0.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour0.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour0.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly16.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly16.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly16.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly16.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly16.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly16.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly16.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour0.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly16.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour3.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour3.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour3.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour3.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly17.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly17.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly17.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly17.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly17.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour3.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour3.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour3.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour3.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour3.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour3.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour3.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly17.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly17.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly17.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly17.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly17.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly17.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly17.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour3.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly17.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour6.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour6.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour6.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour6.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly18.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly18.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly18.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly18.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour6.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour6.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour6.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour6.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour6.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour6.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour6.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly18.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly18.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly18.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly18.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly18.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly18.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly18.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour6.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly18.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour9.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour9.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour9.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour9.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly19.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly19.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly19.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly19.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly19.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour9.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour9.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour9.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour9.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour9.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour9.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour9.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly19.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly19.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly19.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly19.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly19.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly19.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly19.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour9.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly19.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour12.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour12.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour12.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour12.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly20.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly20.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly20.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly20.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly20.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour12.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour12.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour12.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour12.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour12.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour12.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour12.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly20.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly20.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly20.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly20.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly20.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly20.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly20.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour12.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly20.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour15.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour15.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour15.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour15.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly21.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly21.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly21.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly21.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour15.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour15.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour15.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour15.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour15.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour15.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour15.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly21.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly21.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly21.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly21.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly21.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly21.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly21.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour15.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly21.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour18.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour18.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour18.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour18.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly22.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly22.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly22.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly22.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly22.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour18.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour18.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour18.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour18.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour18.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour18.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour18.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly22.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly22.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly22.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly22.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly22.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly22.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly22.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour18.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly22.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day2.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day2.Hour21.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day2.Hour21.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day2.Hour21.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day2.Hour21.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly23.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly23.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly23.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly23.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly23.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day2.Hour21.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day2.Hour21.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day2.Hour21.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day2.Hour21.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day2.Hour21.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day2.Hour21.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day2.Hour21.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly23.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly23.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly23.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly23.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly23.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly23.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly23.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day2.Hour21.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly23.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour0.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour0.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour0.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour0.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly24.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly24.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly24.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly24.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly24.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour0.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour0.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour0.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour0.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour0.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour0.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour0.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly24.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly24.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly24.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly24.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly24.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly24.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly24.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour0.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly24.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour3.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour3.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour3.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour3.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly25.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly25.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly25.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly25.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly25.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour3.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour3.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour3.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour3.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour3.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour3.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour3.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly25.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly25.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly25.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly25.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly25.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly25.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly25.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour3.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly25.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour6.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour6.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour6.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour6.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly26.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly26.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly26.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly26.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly26.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour6.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour6.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour6.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour6.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour6.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour6.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour6.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly26.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly26.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly26.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly26.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly26.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly26.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly26.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour6.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly26.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour9.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour9.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour9.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour9.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly27.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly27.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly27.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly27.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly27.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour9.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour9.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour9.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour9.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour9.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour9.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour9.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly27.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly27.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly27.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly27.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly27.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly27.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly27.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour9.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly27.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour12.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour12.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour12.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour12.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly28.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly28.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly28.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly28.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly28.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour12.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour12.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour12.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour12.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour12.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour12.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour12.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly28.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly28.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly28.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly28.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly28.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly28.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly28.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour12.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly28.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour15.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour15.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour15.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour15.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly29.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly29.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly29.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly29.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly29.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour15.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour15.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour15.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour15.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour15.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour15.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour15.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly29.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly29.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly29.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly29.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly29.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly29.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly29.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour15.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly29.Day))</visible>
+					</item>					
+					<item>
+						<label>[B]$INFO[Window.Property(3Hourly30.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly30.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly30.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly30.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly30.FeelsLikeTempIcon)]</property>
+						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
+						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly30.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly30.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly30.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly30.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly30.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly30.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly30.UVIndex)]</property>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(Window.Property(3Hourly30.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour18.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour18.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour18.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour18.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly31.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly31.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly31.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly31.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly31.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour18.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour18.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour18.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour18.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour18.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour18.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour18.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly31.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly31.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly31.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly31.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly31.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly31.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly31.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour18.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly31.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day3.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day3.Hour21.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day3.Hour21.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day3.Hour21.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day3.Hour21.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly32.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly32.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly32.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly32.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly32.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day3.Hour21.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day3.Hour21.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day3.Hour21.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day3.Hour21.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day3.Hour21.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day3.Hour21.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day3.Hour21.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly32.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly32.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly32.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly32.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly32.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly32.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly32.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day3.Hour21.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly32.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour0.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour0.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour0.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour0.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour0.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly33.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly33.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly33.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly33.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly33.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour0.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour0.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour0.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour0.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour0.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour0.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour0.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly33.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly33.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly33.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly33.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly33.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly33.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly33.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour0.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly33.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour3.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour3.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour3.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour3.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour3.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly34.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly34.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly34.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly34.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly34.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour3.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour3.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour3.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour3.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour3.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour3.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour3.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly34.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly34.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly34.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly34.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly34.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly34.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly34.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour3.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly34.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour6.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour6.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour6.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour6.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour6.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly35.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly35.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly35.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly35.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly35.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour6.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour6.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour6.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour6.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour6.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour6.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour6.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly35.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly35.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly35.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly35.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly35.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly35.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly35.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour6.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly35.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour9.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour9.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour9.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour9.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour9.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly36.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly36.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly36.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly36.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly36.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour9.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour9.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour9.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour9.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour9.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour9.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour9.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly36.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly36.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly36.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly36.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly36.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly36.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly36.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour9.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly36.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour12.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour12.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour12.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour12.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour12.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly37.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly37.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly37.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly37.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly37.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour12.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour12.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour12.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour12.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour12.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour12.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour12.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly37.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly37.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly37.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly37.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly37.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly37.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly37.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour12.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly37.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour15.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour15.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour15.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour15.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour15.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly38.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly38.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly38.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly38.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly38.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour15.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour15.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour15.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour15.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour15.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour15.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour15.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly38.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly38.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly38.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly38.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly38.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly38.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly38.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour15.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly38.Day))</visible>
 					</item>
 					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour18.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour18.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour18.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour18.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour18.FeelsLikeTempIcon)]</property>
+						<label>[B]$INFO[Window.Property(3Hourly39.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(3Hourly39.Day)][/COLOR]</label>
+						<icon>$INFO[Window.Property(3Hourly39.OutlookIcon)]</icon>
+						<property name="ActualTempIcon">$INFO[Window.Property(3Hourly39.ActualTempIcon)]</property>
+						<property name="FeelsLikeTempIcon">$INFO[Window.Property(3Hourly39.FeelsLikeTempIcon)]</property>
 						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
 						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour18.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour18.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour18.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour18.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour18.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour18.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour18.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
+						<property name="WindSpeed">$INFO[Window.Property(3Hourly39.WindSpeed)]</property>
+						<property name="WindIcon">$INFO[Window.Property(3Hourly39.WindIcon)]</property>
+						<property name="GustSpeed">$INFO[Window.Property(3Hourly39.GustSpeed)]</property>
+						<property name="GustIcon">$INFO[Window.Property(3Hourly39.GustIcon)]</property>
+						<property name="Precipitation">$INFO[Window.Property(3Hourly39.Precipitation)]</property>
+						<property name="UVIcon">$INFO[Window.Property(3Hourly39.UVIcon)]</property>
+						<property name="UVIndex">$INFO[Window.Property(3Hourly39.UVIndex)]</property>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour18.Title))</visible>
-					</item>
-					<item>
-						<label>[B]$INFO[Window.Property(Forecast.Day4.Hour21.Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Forecast.Day4.Hour21.Title)][/COLOR]</label>
-						<icon>$INFO[Window.Property(Forecast.Day4.Hour21.OutlookIcon)]</icon>
-						<property name="ActualTempIcon">$INFO[Window.Property(Forecast.Day4.Hour21.ActualTempIcon)]</property>
-						<property name="FeelsLikeTempIcon">$INFO[Window.Property(Forecast.Day4.Hour21.FeelsLikeTempIcon)]</property>
-						<property name="ActualTempFrameIcon">$INFO[Window.Property(Forecast.ActualTempFrameIcon)]</property>
-						<property name="FeelsLikeTempFrameIcon">$INFO[Window.Property(Forecast.FeelsLikeTempFrameIcon)]</property>
-						<property name="WindIcon">$INFO[Window.Property(Forecast.Day4.Hour21.WindIcon)]</property>
-						<property name="GustIcon">$INFO[Window.Property(Forecast.Day4.Hour21.GustIcon)]</property>
-						<property name="WindSpeed">$INFO[Window.Property(Forecast.Day4.Hour21.S)]</property>
-						<property name="GustSpeed">$INFO[Window.Property(Forecast.Day4.Hour21.G)]</property>
-						<property name="Precipitation">$INFO[Window.Property(Forecast.Day4.Hour21.Pp)]</property>
-						<property name="UVIcon">$INFO[Window.Property(Forecast.Day4.Hour21.UVIcon)]</property>
-						<property name="UVIndex">$INFO[Window.Property(Forecast.Day4.Hour21.U)]</property>
-						<property name="Outlook">$INFO[Window.Property(Forecast.Day1.Day.Outlook)]</property>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window.Property(Forecast.Day4.Hour21.Title))</visible>
+						<visible>!IsEmpty(Window.Property(3Hourly39.Day))</visible>
 					</item>
 				</content>
 			</control>
