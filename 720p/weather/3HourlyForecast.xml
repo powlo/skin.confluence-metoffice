@@ -205,7 +205,7 @@
 						<align>right</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$INFO[ListItem.Property(Precipitation)]%</label>
+						<label>$INFO[ListItem.Property(Precipitation)]</label>
 					</control>
 					<control type="image">
 						<posx>200</posx>
