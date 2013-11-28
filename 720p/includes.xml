@@ -12,8 +12,8 @@
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
-	<include file="weather\DefaultLeftPane.xml" />
-	<include file="weather\DefaultRightPane.xml" />
+	<include file="weather\default\LeftPane.xml" />
+	<include file="weather\default\RightPane.xml" />
 	<include file="weather\metoffice\RightPane.xml" />
 	<include file="weather\metoffice\LeftPane.xml" />
 	<include file="weather\metoffice\RegionalForecast.xml" />
