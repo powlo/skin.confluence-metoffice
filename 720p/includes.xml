@@ -12,6 +12,13 @@
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
+	<include file="weather\DefaultCurrent.xml" />
+	<include file="weather\DefaultForecast.xml" />
+	<include file="weather\MetOfficeObservation.xml" />
+	<include file="weather\MetOfficeForecast.xml" />
+	<include file="weather\MetOfficeButtons.xml" />
+	<include file="weather\WundergroundForecast.xml" />
+	<include file="weather\WundergroundButtons.xml" />
 	<include file="weather\10DayForecast.xml" />
 	<include file="weather\36HourForecast.xml" />
 	<include file="weather\WeekendForecast.xml" />
