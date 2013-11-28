@@ -341,8 +341,12 @@ msgctxt "#31208"
 msgid "Upcoming Episodes"
 msgstr ""
 
-#empty strings from id 31209 to 31299
+#empty strings from id 31209 to 31298
 #Extra labels
+
+msgctxt "#31299"
+msgid "Observation for"
+msgstr ""
 
 msgctxt "#31300"
 msgid "Current Temp"
@@ -352,7 +356,10 @@ msgctxt "#31301"
 msgid "Last Updated"
 msgstr ""
 
-#empty string with id 31302
+#for weather.metoffice...
+msgctxt "#31302"
+msgid "Issued At"
+msgstr ""
 
 msgctxt "#31303"
 msgid "Data provider"
@@ -617,19 +624,23 @@ msgid "Wind Gust"
 msgstr ""
 
 msgctxt "#31803"
-msgid "5 Day Forecast"
+msgid "5 Day Forecast for"
 msgstr ""
 
 msgctxt "#31804"
-msgid "Regional Text Forecast"
+msgid "Regional Text Forecast for"
 msgstr ""
 
 msgctxt "#31805"
-msgid "3 Hour Forecast"
+msgid "3 Hour Forecast for"
 msgstr ""
 
 msgctxt "#31806"
 msgid "Precipitation Probability"
+msgstr ""
+
+msgctxt "#31807"
+msgid "Daily Forecast for"
 msgstr ""
 
 msgctxt "#31901"

@@ -3,28 +3,6 @@
 	<include name="WeatherDailyForcast">
 		<control type="group">
 			<visible>IsEmpty(Window.Property(Weather.CurrentView))</visible>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>650</width>
-				<height>620</height>
-				<texture border="20">ContentPanel.png</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>612</posy>
-				<width>650</width>
-				<height>64</height>
-				<texture border="10">ContentPanelMirror.png</texture>
-			</control>
-			<control type="image">
-				<posx>20</posx>
-				<posy>5</posy>
-				<width>610</width>
-				<height>90</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>GlassTitleBar.png</texture>
-			</control>
 			<control type="label">
 				<description>header label</description>
 				<posx>20</posx>
@@ -32,7 +10,7 @@
 				<width>610</width>
 				<height>30</height>
 				<font>font13_title</font>
-				<label>10508</label>
+				<label>$LOCALIZE[31807] $INFO[Window.Property(ForecastLocation)]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
