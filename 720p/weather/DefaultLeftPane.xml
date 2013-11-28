@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="DefaultCurrent">
+	<include name="DefaultLeftPane">
 		<control type="group">
 			<posx>60</posx>
 			<posy>40</posy>

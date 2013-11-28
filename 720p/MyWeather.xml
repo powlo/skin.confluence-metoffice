@@ -60,11 +60,11 @@
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 			<include>VisibleFadeEffect</include>
-			<include condition="!StringCompare(Weather.Plugin,weather.metoffice)">DefaultCurrent</include>
-			<include condition="StringCompare(Weather.Plugin,weather.metoffice)">MetOfficeObservation</include>
-			<include condition="!StringCompare(Weather.Plugin,weather.metoffice)+!StringCompare(Weather.Plugin,weather.wunderground)">DefaultForecast</include>
-			<include condition="StringCompare(Weather.Plugin,weather.wunderground)">WundergroundForecast</include>
-			<include condition="StringCompare(Weather.Plugin,weather.metoffice)">MetOfficeForecast</include>
+			<include condition="!StringCompare(Weather.Plugin,weather.metoffice)">DefaultLeftPane</include>
+			<include condition="StringCompare(Weather.Plugin,weather.metoffice)">MetOfficeLeftPane</include>
+			<include condition="!StringCompare(Weather.Plugin,weather.metoffice)+!StringCompare(Weather.Plugin,weather.wunderground)">DefaultRightPane</include>
+			<include condition="StringCompare(Weather.Plugin,weather.wunderground)">WundergroundRightPane</include>
+			<include condition="StringCompare(Weather.Plugin,weather.metoffice)">MetOfficeRightPane</include>
 		</control>
 		<include>CommonNowPlaying</include>
 		<include>MainWindowMouseButtons</include>

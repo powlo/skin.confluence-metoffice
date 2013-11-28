@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="DefaultForecast">
+	<include name="DefaultRightPane">
 		<control type="group">
 			<posx>580</posx>
 			<posy>40</posy>

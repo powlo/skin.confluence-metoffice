@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="MetOfficeForecast">
+	<include name="WundergroundRightPane">
 		<control type="group">
 			<posx>580</posx>
 			<posy>40</posy>
@@ -22,14 +22,16 @@
 				<posx>20</posx>
 				<posy>5</posy>
 				<width>610</width>
-				<height>60</height>
+				<height>90</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>GlassTitleBar.png</texture>
 			</control>
 			<control type="group" id="50">
-			<include>WeatherRegionalForcast</include>
-			<include>WeatherDailyForcast</include>
-			<include>Weather3HourlyForcast</include>
+				<include>Weather10DayForcast</include>
+				<include>Weather36HourForcast</include>
+				<include>WeatherWeekendForcast</include>
+				<include>WeatherHourlyForcast</include>
+				<include>WeatherMapAlerts</include>
 			</control>
 		</control>
 	</include>

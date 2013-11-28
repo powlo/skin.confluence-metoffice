@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="WeatherDailyForcast">
+	<include name="MetOfficeDailyForcast">
 		<control type="group">
 			<visible>IsEmpty(Window.Property(Weather.CurrentView))</visible>
 			<control type="label">

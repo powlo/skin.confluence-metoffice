@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="WeatherRegionalForcast">
+	<include name="MetOfficeRegionalForcast">
 		<control type="group">
 			<visible>StringCompare(Window.Property(Weather.CurrentView),regional)</visible>
 			<include>VisibleFadeEffect</include>
