@@ -11,7 +11,7 @@
 				<width>610</width>
 				<height>30</height>
 				<font>font13_title</font>
-				<label>$LOCALIZE[31804] $INFO[Window.Property(RegionalLocation)]</label>
+				<label>$LOCALIZE[31804] - $INFO[Window.Property(RegionalLocation)]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>

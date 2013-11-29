@@ -345,7 +345,7 @@ msgstr ""
 #Extra labels
 
 msgctxt "#31299"
-msgid "Observation for"
+msgid "Observation"
 msgstr ""
 
 msgctxt "#31300"
@@ -624,15 +624,15 @@ msgid "Wind Gust"
 msgstr ""
 
 msgctxt "#31803"
-msgid "5 Day Forecast for"
+msgid "5 Day Forecast"
 msgstr ""
 
 msgctxt "#31804"
-msgid "Regional Text Forecast for"
+msgid "Regional Text Forecast"
 msgstr ""
 
 msgctxt "#31805"
-msgid "3 Hour Forecast for"
+msgid "3 Hour Forecast"
 msgstr ""
 
 msgctxt "#31806"
@@ -640,7 +640,7 @@ msgid "Precipitation Probability"
 msgstr ""
 
 msgctxt "#31807"
-msgid "Daily Forecast for"
+msgid "Daily Forecast"
 msgstr ""
 
 msgctxt "#31901"

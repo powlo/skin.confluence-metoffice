@@ -11,7 +11,7 @@
 				<width>610</width>
 				<height>30</height>
 				<font>font13_title</font>
-				<label>$LOCALIZE[31805] $INFO[Window.Property(ForecastLocation)]</label>
+				<label>$LOCALIZE[31805] - $INFO[Window.Property(ForecastLocation)]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
